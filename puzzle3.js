@@ -1,6 +1,6 @@
 const { readFile } = require("./helper")
 
-const puzzleInputFile = 'puzzle3.input.txt';
+const puzzleInputFile = 'puzzle3.txt';
 
 const cal = (str) => {
     const nums = str.substring(4, str.length - 1).split(',').map(val => Number(val));

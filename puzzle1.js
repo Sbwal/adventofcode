@@ -1,6 +1,6 @@
 const { readFile } = require("./helper")
 
-const puzzleInputFile = 'puzzle1.input.txt';
+const puzzleInputFile = 'puzzle1.txt';
 
 const code = async () => {
     let data = await readFile(puzzleInputFile);

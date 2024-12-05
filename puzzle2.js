@@ -1,6 +1,6 @@
 const { readFile } = require("./helper")
 
-const puzzleInputFile = 'puzzle2.input.txt';
+const puzzleInputFile = 'puzzle2.txt';
 
 const valid = (a) => {
     let f = a[1] > a[0];
