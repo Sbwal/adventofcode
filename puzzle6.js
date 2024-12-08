@@ -64,10 +64,10 @@ const code = async () => {
             continue;
         }
         data[im][jm] = 'o';
-        console.clear();
-        process.stdout.write('\x1Bc')
-        console.log('\n\n\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&')
-        console.log(data.map(v => v.join('')).join('\n'));
+        // console.clear();
+        // process.stdout.write('\x1Bc')
+        // console.log('\n\n\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&')
+        // console.log(data.map(v => v.join('')).join('\n'));
         const val = returnBack(i, j, pd);
         if(val) {
             c++;
