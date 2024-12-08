@@ -31,12 +31,18 @@ const code = async () => {
         return im >= n || im < 0 || jm >= m || jm < 0;
     }
     const returnBack = (x, y, pd) => {
+        const map = Array(n).fill().map(_ => Array(m).fill(0));
         let i = x, j = y;
         let c = 0;
         while (true) {
             let im = i + move[pd][0];
             let jm = j + move[pd][1];
             if (inValid(im, jm)) {
+                return false;
+            }
+            map[im][jm]++;
+            if(map[im][jm] > 5) {
+                console.log('repeated')
                 return false;
             }
             if (data[im][jm] === '#' || data[im][jm] === 'o') {
